@@ -20,11 +20,13 @@ public class AccountModelImpl implements AccountModel {
     private DBHelper mDbHelper;
     private SQLiteDatabase mSQLiteDataBase;
     private List<Account> mAccounts;
-    private AccontPresenter mAccountPresenter;
+
+    // TODO: 2/6/17 Model should not contains Presenter instance
+    private AccountPresenter mAccountPresenter;
     private Context mContext;
 
-    public AccountModelImpl(AccontPresenter accontPresenter, Context context) {
-        mAccountPresenter = accontPresenter;
+    public AccountModelImpl(AccountPresenter accountPresenter, Context context) {
+        mAccountPresenter = accountPresenter;
         mContext = context;
     }
 

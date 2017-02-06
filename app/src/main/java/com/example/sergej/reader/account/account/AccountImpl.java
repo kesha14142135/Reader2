@@ -3,7 +3,7 @@ package com.example.sergej.reader.account.account;
 /**
  * Created by sergej on 03.02.17.
  */
-
+// TODO: 2/6/17 Remove interface implementation
 public class AccountImpl implements Account {
 
     private String mLogin;

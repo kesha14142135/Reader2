@@ -8,6 +8,7 @@ import java.util.List;
  * Created by sergej on 03.02.17.
  */
 
+// TODO: 2/6/17 AccountsDataSourceModel be better. Or AccountsRepository
 public interface AccountModel {
 
     void insert(SQLiteDatabase dataBase, String table, Account account);
